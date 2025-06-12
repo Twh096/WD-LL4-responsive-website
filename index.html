@@ -1,83 +1,55 @@
-/* Reset default browser margin and padding */
-body, h1, h2, h3, p, nav, section, footer {
-  margin: 0;
-  padding: 0;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eco-Friendly Travel</title>
+  <!-- Link to the CSS file -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header section with site title and navigation links -->
+  <header>
+    <h1>Eco-Friendly Travel</h1>
+    <nav>
+      <!-- Navigation links -->
+      <a href="#">Home</a>
+      <a href="#">Destinations</a>
+      <a href="#">Tips</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
 
-/* Set a simple font and background color for the whole page */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #eafaf1; /* light green background */
-  color: #2d4739; /* dark green text */
-}
+  <!-- Main content of the page -->
+  <main>
+    <!-- Introduction section -->
+    <section class="intro">
+      <h2>Welcome to Green Adventures!</h2>
+      <p>Discover sustainable travel tips and eco-friendly destinations.</p>
+    </section>
 
-/* Style the header section */
-header {
-  background-color: #4caf50; /* green background */
-  color: white;
-  padding: 20px;
-  text-align: center;
-}
+    <!-- Featured destinations section -->
+    <section class="destinations">
+      <h2>Featured Destinations</h2>
+      <!-- First destination card -->
+      <div class="destination-card">
+        <!-- Example image for the destination -->
+        <img src="forest.jpg" alt="Green Forest">
+        <h3>Green Forest</h3>
+        <p>Explore beautiful forests with minimal impact on nature.</p>
+      </div>
+      <!-- Second destination card -->
+      <div class="destination-card">
+        <img src="beach.jpg" alt="Eco Beach">
+        <h3>Eco Beach</h3>
+        <p>Relax on clean beaches that support local wildlife.</p>
+      </div>
+    </section>
+  </main>
 
-/* Style the navigation links */
-nav a {
-  color: white;
-  text-decoration: none;
-  margin: 0 10px;
-  /* Add some space between links */
-}
-
-/* Add padding to the main content */
-main {
-  padding: 20px;
-}
-
-/* Center the intro section text */
-.intro {
-  margin-bottom: 30px;
-  text-align: center;
-}
-
-/* Center the destinations section */
-.destinations {
-  text-align: center;
-}
-
-/* Style each destination card */
-.destination-card {
-  display: inline-block; /* Show cards side by side on large screens */
-  width: 45%; /* Each card takes up almost half the width */
-  margin: 2%; /* Space between cards */
-  background: #fff; /* White background */
-  border-radius: 8px; /* Rounded corners */
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* Soft shadow */
-  padding: 15px;
-  vertical-align: top;
-}
-
-/* Make images fit the card and have rounded corners */
-.destination-card img {
-  width: 100%;
-  border-radius: 8px;
-}
-
-/* Style the footer */
-footer {
-  background-color: #4caf50;
-  color: white;
-  text-align: center;
-  padding: 10px;
-  margin-top: 30px;
-}
-
-/* Make the layout responsive for small screens */
-@media (max-width: 600px) {
-  .destination-card {
-    display: block; /* Stack cards vertically */
-    width: 100%; /* Full width */
-    margin: 10px 0;
-  }
-  nav a {
-    display: block; /* Stack nav links vertically */
-    margin: 10px 0;
-  }
+  <!-- Footer section -->
+  <footer>
+    <p>&copy; 2025 Eco-Friendly Travel</p>
+  </footer>
+</body>
+</html>
